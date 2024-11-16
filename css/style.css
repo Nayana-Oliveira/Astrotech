@@ -20,7 +20,7 @@ header {
 }
 
 header h1 {
-    color: #dfe09f;
+    color: #FFFF99;
     font-size: 2.5em;
 }
 
@@ -34,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #dfe09f;
+    color: #FFFF99;
     text-decoration: none;
     font-weight: bold;
 }
@@ -63,7 +63,7 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #e6f08f;
+    background-color: #FFFF99;
     color: #000;
     text-decoration: none;
     font-weight: bold;
@@ -107,6 +107,7 @@ section h2 {
 .image-container {
     flex: 1;
     text-align: center;
+    width: 10px;
 }
 
 .image-container img {
@@ -150,12 +151,12 @@ section h2 {
 
 /* Cor para o título "O Produto" */
 #produto h2 {
-    color: #e6f08f; /* Escolha a cor que você preferir */
+    color: #FFFF99; /* Escolha a cor que você preferir */
 }
 
 /* Cor para o título "Sobre a AstroTech" */
 #sobre h2 {
-    color: #e6f08f; /* Escolha a cor que você preferir */
+    color: #FFFF99; /* Escolha a cor que você preferir */
 }
 
 
