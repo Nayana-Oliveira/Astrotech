@@ -4,62 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstroTech - Sunvolt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Menu Mobile -->
+    <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
 
     <!-- Cabeçalho com o nome da empresa -->
     <header>
         <div class="container">
-            <h1>AstroTech</h1>
+            <div class="logo">
+                <h1>AstroTech</h1>
+                <div class="tagline">Energia do Futuro</div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#produto">Sunvolt</a></li>
-                    <li><a href="#sobre">Sobre a Empresa</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Seção principal do produto Sunvolt -->
-    <section id="home">
-        <div class="hero">
-            <h2 class="h2">Descubra o Poder do Sol com Sunvolt</h2>
-            <p>Energia solar de alta eficiência para o seu dia a dia. <br> Sustentável, potente e de fácil uso.</p>
-            <a href="https://www.instagram.com/conte_3g/" class="btn">Saiba mais no nosso Instagram</a>
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Descubra o Poder do Sol com <span>Sunvolt</span></h2>
+            <p>Energia solar de alta eficiência para o seu dia a dia. Sustentável, potente e de fácil uso.</p>
+            <div class="hero-buttons">
+                <a href="#produto" class="btn primary">Conheça o Produto</a>
+                <a href="https://www.instagram.com/conte_3g/" class="btn secondary" target="_blank"><i class="fab fa-instagram"></i> Nosso Instagram</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Seção de Destaques -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <i class="fas fa-solar-panel"></i>
+                <h3>Alta Eficiência</h3>
+                <p>Painéis solares com tecnologia de ponta para máximo aproveitamento.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-battery-full"></i>
+                <h3>Bateria Durável</h3>
+                <p>Bateria de lítio de longa duração para armazenamento eficiente.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf"></i>
+                <h3>100% Sustentável</h3>
+                <p>Energia limpa e renovável para reduzir sua pegada ecológica.</p>
+            </div>
         </div>
     </section>
 
     <!-- Seção do produto Sunvolt -->
-    <section id="produto" class="container section-content">
-    <div class="image-container">
-        <!-- Adicione a imagem aqui -->
-        <img src="img/sunvolt.png" alt="logo Sunvolt" class="img">
-    </div>
-    <div class="text-container">
-        <h2 class="texto">Produto</h2>
-        <p>O Sunvolt é um carregador compacto, leve e sustentável, que utiliza painéis solares para converter a luz do sol em energia elétrica, permitindo carregar dispositivos como smartphones, tablets, câmeras e outros eletrônicos de pequeno porte. Ele oferece uma solução prática para quem busca reduzir a pegada de carbono no dia a dia e deseja uma opção de carregamento fora da rede elétrica. <br><br>O Sunvolt contém painéis solares de alta eficiência, bateria interna de lítio que armazena energia para emergências, portas USB e USB-C, design dobrável e portátil, resistência à água e impactos, além de oferecer energia 100% limpa para reduzir o uso de eletricidade convencional.</p>
-    </div>
+    <section id="produto" class="product-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sunvolt</h2>
+                <p>O futuro da energia portátil</p>
+            </div>
+            <div class="product-content">
+                <div class="product-image">
+                    <img src="img/logo sunvolt.jpeg" alt="Sunvolt" class="product-img">
+                    <div class="product-badge">Novo</div>
+                </div>
+                <div class="product-info">
+                    <h3>Carregador Solar Inteligente</h3>
+                    <p>O Sunvolt é um carregador compacto, leve e sustentável, que utiliza painéis solares para converter a luz do sol em energia elétrica, permitindo carregar dispositivos como smartphones, tablets, câmeras e outros eletrônicos de pequeno porte.</p>
+                    
+                    <div class="specs">
+                        <div class="spec-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Saída USB e USB-C</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-tint"></i>
+                            <span>Resistente à água</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-sun"></i>
+                            <span>Painéis de alta eficiência</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-battery-three-quarters"></i>
+                            <span>Bateria de lítio</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contato" class="btn primary">Quero saber mais</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Seção Sobre a Empresa -->
-    <section id="sobre" class="container section-content">
-    <div class="image-container">
-        <img src="img/logo sunvolt.jpeg" alt="produto">
-    </div>
-    <div class="text-container">
-        <h2>Sobre a Astrotech</h2>
-        <p>A Astrotech é uma empresa comprometida com a inovação e a sustentabilidade. Nossa missão é criar tecnologias que contribuam para um futuro mais limpo e acessível. Acreditamos no poder da energia solar como uma das fontes mais promissoras e confiáveis de energia renovável.</p>
-    </div>
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="section-header">
+                        <h2>Sobre a AstroTech</h2>
+                        <p>Inovação e sustentabilidade</p>
+                    </div>
+                    <p>A AstroTech é uma empresa comprometida com a inovação e a sustentabilidade. Nossa missão é criar tecnologias que contribuam para um futuro mais limpo e acessível. Acreditamos no poder da energia solar como uma das fontes mais promissoras e confiáveis de energia renovável.</p>
+                    
+                    <div class="mission-vision">
+                        <div class="mv-item">
+                            <h4><i class="fas fa-bullseye"></i> Missão</h4>
+                            <p>Democratizar o acesso à energia solar através de produtos inovadores e acessíveis.</p>
+                        </div>
+                        <div class="mv-item">
+                            <h4><i class="fas fa-eye"></i> Visão</h4>
+                            <p>Ser referência em soluções de energia portátil sustentável até 2030.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/sunvolt.png" alt="AstroTech">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Tire suas dúvidas sobre o Sunvolt</p>
+            </div>
+            <div class="contact-content">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Enviar Mensagem</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@astrotech.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(11) 98765-4321</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo, Brasil</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/conte_3g/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
         <div class="container">
-        2024 AstroTech. Todos os direitos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>AstroTech</h3>
+                    <p>Energia do Futuro, hoje.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produto">Sunvolt</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AstroTech. Todos os direitos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
         </div>
     </footer>
-    
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
